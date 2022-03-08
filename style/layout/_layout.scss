@@ -1,0 +1,11 @@
+.wrapper {
+    width: 100%;
+	min-width: $containerWidth + 60px;
+    min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+    width: $containerWidth;
+	margin: 0 auto;
+}

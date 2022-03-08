@@ -1,0 +1,35 @@
+.benefit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    &__logo {
+        display: flex;
+        width: 126px;
+        height: 126px;
+        background-color: #F2F5F4;
+        border-radius: 50%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__logo-img {
+        height: 66px;
+    }
+
+    &__item-title {
+        color: $black;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    &__info {
+        p {
+            font-weight: 300;
+            line-height: 22px;
+        }
+    }
+}

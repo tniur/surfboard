@@ -1,0 +1,93 @@
+.form {
+    display: flex;
+
+    &__col {
+        flex: 1;
+        margin-right: 39px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    &__row {
+        display: flex;
+        margin-bottom: 12px;
+
+        &--textarea {
+            margin-bottom: 31px;
+        }
+    }
+
+    &__block {
+        flex: 1;
+        margin-right: 32px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__input {
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+        border: none;
+
+        font-size: 14px;
+        line-height: 20px;
+
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 12px;
+
+        border: 3px solid transparent;
+        border-radius: 4px;
+
+        &:focus {
+        border: 3px solid $yellow;
+        }
+
+        &--textarea {
+            height: 118px;
+            resize: none;
+        }
+
+    }
+
+    &__title {
+        color: #fff;
+        line-height: 22px;
+        margin-bottom: 2px;
+    }
+
+    &__controls {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 19px;
+
+        &--button {
+            margin-top: 46px;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__btn {
+        margin-right: 22px;
+    }
+
+    &__reset {
+        display: block;
+        height: 30px;
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}

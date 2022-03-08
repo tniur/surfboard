@@ -1,0 +1,58 @@
+html,
+body {
+	height: 100%;
+	position: relative;
+}
+
+body {
+	font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
+	font-size: $baseFontSize;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-weight: normal;
+	color: $gray;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+a {
+	cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+address {
+	font-style: normal;
+}
+
+input,
+textarea {
+	outline: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+p {
+	margin: 0;
+}

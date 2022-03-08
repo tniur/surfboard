@@ -1,0 +1,32 @@
+.benefits {
+
+    &__description {
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 49px;
+        padding: 0 27%;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: ($containerWidth - 100px) / 3;
+        position: relative;
+
+        &::before {
+            content: url(../img/svg/benefits-decor.svg);
+            position: absolute;
+            top: 21%;
+            left: 97%;
+        }
+
+        &:last-child {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

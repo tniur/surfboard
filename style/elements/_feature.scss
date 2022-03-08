@@ -1,0 +1,21 @@
+.feature {
+
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        margin-right: 14px;
+        width: 35px;
+    }
+
+    &__desc {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+        color: #fff;
+        max-width: 90px;
+    }
+
+    
+
+}

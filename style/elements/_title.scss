@@ -1,0 +1,23 @@
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: $black;
+    margin-bottom: 53px;
+
+    &--benefits {
+        margin-bottom: 17px;
+    }
+
+    &--feedback {
+        margin-bottom: 32px;
+    }
+
+    &--order {
+        margin-bottom: 59px;
+        color: #fff;
+    }
+
+}

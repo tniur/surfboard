@@ -1,0 +1,12 @@
+.contact-phone {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        margin-right: 5.6px;
+    }
+
+    &__tel {
+        font-size: 22px;
+    }
+}
