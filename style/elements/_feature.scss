@@ -4,18 +4,14 @@
     align-items: center;
 
     &__icon {
-        margin-right: 14px;
-        width: 35px;
+        margin-right: 0.875rem;
+        width: 2.1875rem;
     }
 
     &__desc {
-        font-size: 16px;
-        line-height: 18px;
+        line-height: 1.125rem;
         font-weight: 700;
         color: #fff;
-        max-width: 90px;
+        max-width: 5.625rem;
     }
-
-    
-
 }

@@ -1,12 +1,12 @@
 .btn {
-	font-size: 16px;
     font-weight: 800;
 	text-transform: uppercase;
     color: #000;
-    line-height: 18px;
+	font-size: 1rem;
+    line-height: 1.125rem;
 	display: inline-block;
-	padding: 21px 41px;
-	border-radius: 100px;
+	padding: 1.3125rem 2.5625rem;
+	border-radius: 6.25rem;
 	background-color: $yellow;
 	border: none;
 	cursor: pointer;

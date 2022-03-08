@@ -6,30 +6,30 @@
 
     &__logo {
         display: flex;
-        width: 126px;
-        height: 126px;
+        width: 7.875rem;
+        height: 7.875rem;
         background-color: #F2F5F4;
         border-radius: 50%;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     &__logo-img {
-        height: 66px;
+        height: 4.125rem;
     }
 
     &__item-title {
         color: $black;
         font-weight: 700;
-        font-size: 27px;
-        line-height: 32px;
-        margin-bottom: 20px;
+        font-size: 1.6875rem;
+        line-height: 2rem;
+        margin-bottom: 1.25rem;
     }
 
     &__info {
         p {
             font-weight: 300;
-            line-height: 22px;
+            line-height: 1.375rem;
         }
     }
 }

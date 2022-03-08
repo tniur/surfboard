@@ -1,9 +1,9 @@
 .benefits {
 
     &__description {
-        line-height: 22px;
+        line-height: 1.375rem;
         text-align: center;
-        margin-bottom: 49px;
+        margin-bottom: 3.0625rem;
         padding: 0 27%;
     }
 
@@ -13,7 +13,7 @@
     }
 
     &__item {
-        max-width: ($containerWidth - 100px) / 3;
+        max-width: ($containerWidth - 6.25rem) / 3;
         position: relative;
 
         &::before {
