@@ -7,17 +7,43 @@
     }
 
     &__item {
+
+        @include tablets {
+            padding: 2.625rem 2.5rem 2.625rem 2.5rem;
+        }
+
         background-color: #F8FAF9;
-        padding: 2.625rem 8.875rem 2.625rem 2.5rem;
+        padding: 2.625rem 2rem 2.625rem 2.5rem;
         margin-bottom: 0.9375rem;
     }
 
     &__item-inner {
+
+        @include tablets {
+            flex-direction: column;
+            text-align: center;
+        }
+
         display: flex;
         align-items: center;
     }
 
     &__avatar {
+
+        @include tablets {
+            margin-right: 0;
+            margin-bottom: rem(32px);
+            width: rem(139px);
+            height: rem(139px);
+        }
+
+        @include phones {
+            margin-right: 0;
+            margin-bottom: rem(32px);
+            width: rem(150px);
+            height: rem(150px);
+        }
+
         margin-right: 2.5rem;
         width: 15.8125rem;
         height: 16.5rem;
@@ -64,5 +90,4 @@
             margin-right: 0;
         }
     }
-
 }

@@ -1,0 +1,42 @@
+.hamburger {
+
+    @include tablets {
+        display: flex;
+    }
+
+    display: none;
+    align-items: center;
+    width: 26px;
+    height: 30px;
+
+    &__planks {
+        display: block;
+        height: 4.5px;
+        width: 26px;
+        background-color: #fff;
+        border-radius: 10px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            display: block;
+            width: 26px;
+            height: 4.5px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            display: block;
+            width: 26px;
+            height: 4.5px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+    }
+}

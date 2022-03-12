@@ -16,8 +16,12 @@
     }
 
     &--order {
+
+        @include tablets {
+            margin-bottom: rem(30px);
+        }
+
         margin-bottom: 3.6875rem;
         color: #fff;
     }
-
 }

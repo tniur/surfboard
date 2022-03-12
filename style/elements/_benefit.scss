@@ -1,10 +1,26 @@
 .benefit {
+    @include phones {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
 
     &__logo {
+
+        @include tablets {
+            margin-bottom: 2rem;
+        }
+
+        @include phones {
+            margin-right: rem(22px);
+            margin-bottom: 0;
+        }
+
         display: flex;
         width: 7.875rem;
         height: 7.875rem;
@@ -19,6 +35,15 @@
     }
 
     &__item-title {
+
+        @include tablets {
+            margin-bottom: rem(5px);
+        }
+
+        @include phones {
+            margin-bottom: rem(10px);
+        }
+
         color: $black;
         font-weight: 700;
         font-size: 1.6875rem;
@@ -27,6 +52,12 @@
     }
 
     &__info {
+
+        @include phones {
+            flex: 1;
+            padding-right: rem(10px);
+        }
+
         p {
             font-weight: 300;
             line-height: 1.375rem;

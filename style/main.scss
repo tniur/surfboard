@@ -1,5 +1,7 @@
-$containerWidth: 58.75rem;
-$baseFontSize: 1.125rem;
+$containerWidth: 940px;
+
+$baseFontSize: 16px;
+$bodyFontSize: 1.125rem;
 
 $fixed-menu: 100;
 
@@ -8,11 +10,14 @@ $yellow-dark: #FFD517;
 $black: #292929;
 $gray: #666;
 
+$tablets: 768px;
+$phones: 480px;
 
 @import "https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap";
 
 @import "layout/normalize.css";
+@import "_media.scss";
 @import "layout/_base.scss";
 @import "layout/_layout.scss";
 
@@ -22,15 +27,14 @@ $gray: #666;
 @import "blocks/_benefits.scss";
 @import "blocks/_feedbacks.scss";
 @import "blocks/_order.scss";
-@import "blocks/_map.scss";
+@import "blocks/_contacts.scss";
 
-@import "elements/_logo.scss";
-@import "elements/_header.scss";
 @import "elements/_navigation.scss";
 @import "elements/_button.scss";
 @import "elements/_title.scss";
 @import "elements/_form.scss";
 @import "elements/_contact-phone.scss";
+@import "elements/_header.scss";
 @import "elements/_feature.scss";
 @import "elements/_benefit.scss";
 @import "elements/_interactive-avatar.scss";
@@ -38,3 +42,4 @@ $gray: #666;
 @import "elements/_menu.scss";
 @import "elements/_footer.scss";
 @import "elements/_socials.scss";
+@import "elements/_hamburger.scss";

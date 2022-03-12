@@ -1,7 +1,31 @@
 .header {
+
+    @include tablets {
+        background-color: #1968B1;
+        padding: 26px 36px 26px 30px;
+        align-items: center;
+    }
+
+    @include phones {
+        padding-left: 12px;
+    }
+
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     color: #fff;
     font-weight: 700;
+
+    &__contact-phone {
+
+        @include tablets {
+            display: none;
+        }
+
+        padding-top: rem(6px);
+    }
+
+    &__navigation {
+        padding-top: rem(9px);
+    }
 }

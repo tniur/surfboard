@@ -1,5 +1,13 @@
 html {
-	font-size: 16px;
+	font-size: $baseFontSize;
+
+	@include tablets {
+		font-size: $baseFontSize - 1px;
+	}
+
+	@include phones {
+		font-size: $baseFontSize - 2px;
+	}
 }
 
 html,
@@ -10,7 +18,7 @@ body {
 
 body {
 	font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
-	font-size: $baseFontSize;
+	font-size: $bodyFontSize;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-style: normal;

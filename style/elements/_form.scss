@@ -1,7 +1,24 @@
 .form {
+
+    @include tablets {
+        flex-direction: column;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    @include phones {
+        max-width: 100%;
+        
+    }
+
     display: flex;
 
     &__col {
+
+        @include tablets {
+            margin-right: 0;
+        }
+
         flex: 1;
         margin-right: 2.4375rem;
 
@@ -15,30 +32,41 @@
         margin-bottom: 0.75rem;
 
         &--textarea {
-            margin-bottom: 1.9375rem;
+            margin-bottom: rem(24px);
         }
     }
 
     &__block {
         flex: 1;
-        margin-right: 2rem;
+        padding-right: 2rem;
 
         &:last-child {
-            margin-right: 0;
+            padding-right: 0;
         }
     }
 
     &__input {
+
+        @include tablets {
+            height: rem(16px);
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.3rem;
+        }
+
+        @include phones {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         font-family: 'Open Sans', sans-serif;
         width: 100%;
         border: none;
 
         font-size: 0.875rem;
-        line-height: 1.25rem;
 
-        padding-top: 1.125rem;
-        padding-bottom: 1.125rem;
-        padding-left: 0.75rem;
+        padding: 1.125rem 0.75rem;
+        padding-left: 0;
 
         border: 0.1875rem solid transparent;
         border-radius: 0.25rem;
@@ -48,6 +76,13 @@
         }
 
         &--textarea {
+
+            @include tablets {
+                width: 100%;
+                height: rem(46px);
+            }
+
+            width: 86%;
             height: 7.375rem;
             resize: none;
         }
@@ -61,11 +96,21 @@
     }
 
     &__controls {
+
+        @include phones {
+            justify-content: center;
+        }
+
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 1.1875rem;
 
         &--button {
+
+            @include tablets {
+                justify-content: center;
+                margin-top: rem(39px);
+            }
+
             margin-top: 2.875rem;
             margin-bottom: 0;
             display: flex;
@@ -73,8 +118,17 @@
         }
     }
 
-    &__btn {
+    &__radio {
+        margin-bottom: 1.1875rem;
+    }
+
+    &__controls-item {
+        margin-bottom: 1.375rem;
         margin-right: 1.375rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     &__reset {
