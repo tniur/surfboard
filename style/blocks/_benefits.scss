@@ -35,7 +35,7 @@
         }
 
         flex: 1;
-        padding: 0 rem(20px);
+        padding: 0 rem(25px);
         position: relative;
 
         &::before {
@@ -46,7 +46,7 @@
 
             content: url(../img/svg/benefits-decor.svg);
             position: absolute;
-            top: 58px;
+            top: rem(58px);
             right: 0;
             transform: translateX(50%);
         }

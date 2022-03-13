@@ -1,8 +1,12 @@
 .hero {
-    background: url(../img/background/bc-1.jpeg) center center no-repeat;
+    background: url(../img/background/bc-1.jpg) center center no-repeat;
     background-size: cover;
     color: #fff;
     width: 100%;
+
+    @include tablets {
+        background-position-x: 55%;
+    }
 
     &__container {
 

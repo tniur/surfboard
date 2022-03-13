@@ -20,7 +20,7 @@
             margin-right: rem(22px);
             margin-bottom: 0;
         }
-
+        
         display: flex;
         width: 7.875rem;
         height: 7.875rem;
@@ -30,8 +30,11 @@
         margin-bottom: 1.25rem;
     }
 
-    &__logo-img {
-        height: 4.125rem;
+    &__icon {
+        fill: #000;
+        width: rem(64px);
+        height: rem(64px);
+        margin: 0 auto;
     }
 
     &__item-title {

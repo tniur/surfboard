@@ -5,7 +5,9 @@
 
     &__icon {
         margin-right: 0.875rem;
-        width: 2.1875rem;
+        width: rem(35px); 
+        height: rem(35px);
+        fill: #fff;
     }
 
     &__desc {

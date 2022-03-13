@@ -1,11 +1,18 @@
 .contacts {
     
-    background: url(../img/background/map.png) center center no-repeat;
+    background: url(../img/background/map.jpg) center center no-repeat;
     background-size: cover;
     position: relative;
 
     &::before {
         content: url(../img/svg/map-point.svg);
+        position: absolute;
+        top: 45%;
+        left: 55%;
+    }
+
+    &::before {
+        content: use();
         position: absolute;
         top: 45%;
         left: 55%;
