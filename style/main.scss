@@ -4,6 +4,7 @@ $baseFontSize: 16px;
 $bodyFontSize: 1.125rem;
 
 $fixed-menu: 100;
+$hamburger-menu: 1000;
 
 $yellow: #FEDB3F;
 $yellow-dark: #FFD517;
@@ -13,7 +14,7 @@ $gray: #666;
 $tablets: 768px;
 $phones: 480px;
 
-@import "https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap";
 
 @import "layout/normalize.css";
@@ -28,6 +29,8 @@ $phones: 480px;
 @import "blocks/_feedbacks.scss";
 @import "blocks/_order.scss";
 @import "blocks/_contacts.scss";
+@import "blocks/_hamburger-menu.scss";
+@import "blocks/_slider.scss";
 
 @import "elements/_navigation.scss";
 @import "elements/_button.scss";
@@ -44,3 +47,6 @@ $phones: 480px;
 @import "elements/_socials.scss";
 @import "elements/_hamburger.scss";
 @import "elements/_logo.scss";
+@import "elements/_product.scss";
+@import "elements/_products.scss";
+@import "elements/_structure.scss";
