@@ -1,103 +1,82 @@
 .slider {
-    background-color: #F8FAF9;
+	background-color: #f8faf9;
 
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
+	.bx-wrapper {
+		box-shadow: none;
+		border: none;
+		background: none;
+		margin: 0;
+		flex-shrink: 1;
+	}
 
-        @include tablets {
-            width: 100%;
-        }
-        
-    }
+	&__container {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
 
-    &__controls {
+	&__control {
+		width: 50px;
+		height: 50px;
+		position: relative;
+		flex-shrink: 0;
+		cursor: pointer;
+	}
 
-        @include tablets {
-            top: -20%;
-        }
+	&__arrow {
+		border: none;
+		background: none;
+		margin: 0;
+		padding: 0;
+	}
 
-        display: block;
-        width: rem(20px);
-        height: rem(40px);
-        cursor: pointer;
-        position: relative;
-    }
+	&__arrow--left {
+		display: block;
+		width: 2px;
+		height: 20px;
+		background-color: #000;
+		border-radius: 2px;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 9px;
+		left: 22px;
 
-    &__controls--left {
+		&::after {
+			content: '';
+			display: block;
+			width: 2px;
+			height: 20px;
+			background-color: #000;
+			border-radius: 2px;
+			transform: rotate(90deg);
+			position: absolute;
+			top: 10px;
+			left: 9.5px;
+		}
+	}
 
-        @include tablets {
-            left: 15%;
-        }
+	&__arrow--right {
+		display: block;
+		width: 2px;
+		height: 20px;
+		background-color: #000;
+		border-radius: 2px;
+		transform: rotate(-45deg);
+		position: absolute;
+		top: 9px;
+		right: 22px;
 
-        @include phones {
-            left: 14%;
-        }
-    }
-
-    &__controls--right {
-
-        @include tablets {
-            right: 15%;
-        }
-
-        @include phones {
-            right: 14%;
-        }
-    }
-
-    &__arrow--left {
-
-        display: block;
-        width: 2px;
-        height: 20px;
-        background-color: #000;
-        border-radius: 2px;
-        transform: rotate(45deg);
-        position: absolute;
-        top: 4px;
-        left: 10px;
-
-        &::after {
-            content: "";
-            display: block;
-            width: 2px;
-            height: 20px;
-            background-color: #000;
-            border-radius: 2px;
-            transform: rotate(90deg);
-            position: absolute;
-            top: 10px;
-            left: 9.5px;
-        }
-    }
-
-    &__arrow--right {
-
-        display: block;
-        width: 2px;
-        height: 20px;
-        background-color: #000;
-        border-radius: 2px;
-        transform: rotate(-45deg);
-        position: relative;
-        top: 4px;
-        right: -10px;
-
-        &::after {
-            content: "";
-            display: block;
-            width: 2px;
-            height: 20px;
-            background-color: #000;
-            border-radius: 2px;
-            transform: rotate(90deg);
-            position: absolute;
-            top: 10px;
-            right: 9.5px;
-        }
-    }
-
+		&::after {
+			content: '';
+			display: block;
+			width: 2px;
+			height: 20px;
+			background-color: #000;
+			border-radius: 2px;
+			transform: rotate(90deg);
+			position: absolute;
+			top: 10px;
+			right: 9.5px;
+		}
+	}
 }

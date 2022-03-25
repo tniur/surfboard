@@ -1,189 +1,191 @@
 .product {
+	@include tablets {
+		display: flex;
+		flex-direction: column;
+	}
 
-    @include tablets {
-        display: flex;
-        flex-direction: column;
-    }
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+	&__image {
+		display: block;
+		width: 100%;
+		background: url('../img/others/bc.png') center center no-repeat;
+		background-size: 80%;
+		flex: 1;
 
-    &__image {
-        display: block;
-        width: 100%;
-        background: url("../img/others/bc.png") center center no-repeat;
-        background-size: contain;
-        flex: 1;
-        flex-shrink: 0;
+		@include tablets {
+			width: 50%;
+		}
+	}
 
-        @include tablets {
-            width: 50%;
-        }
-    }
+	&__img {
+		@include tablets {
+			width: rem(116px);
+			height: rem(414px);
+		}
 
-    &__img {
-        @include tablets {
-            width: rem(116px);
-            height: rem(414px);
-        }
+		@include phones {
+			width: rem(92px);
+			height: rem(329px);
+		}
 
-        @include phones {
-            width: rem(92px);
-            height: rem(329px);
-        }
-        
-        margin: 0 auto;
-        width: rem(150px);
-        height: rem(535px);
-        transform: rotate(30deg);
-    }
+		margin: 0 auto;
+		width: rem(150px);
+		height: rem(535px);
+		transform: rotate(30deg);
+	}
 
-    &__background {
-        fill: #ECECEC;
-        width: rem(397px); 
-        height: rem(379px);
-    }
+	&__background {
+		fill: #ececec;
+		width: rem(397px);
+		height: rem(379px);
+	}
 
-    &__info {
-        @include tablets {
-            padding-left: 0;
-            padding-bottom: 30px;
-        }
+	&__info {
+		@include tablets {
+			padding-left: 0;
+			padding-bottom: 30px;
+		}
 
-        flex: 1;
-        padding-left: rem(80px);
+		flex: 1;
+		padding-left: rem(20px);
+	}
 
-    }
+	&__dropdown {
+		@include tablets {
+			display: none;
+		}
 
-    &__dropdown {
-        @include tablets {
-            display: none;
-        }
+		display: inline-block;
+		position: relative;
+		margin-bottom: rem(52px);
 
-        display: inline-block;
-        position: relative;
-        margin-bottom: rem(52px);
+		&:hover {
+			display: block;
 
-        &:hover {
-            display: block;
+			.product__structure {
+				right: 0;
+				opacity: 1;
+				transition: opacity 0.5s;
+				left: rem(91px);
+			}
 
-            .product__structure {
-                right: 0;
-                opacity: 1;
-                transition: opacity 0.5s;
-                left: rem(91px);
-            }
+			.product__parameters {
+				background-color: #3465a3;
+			}
+		}
+	}
 
-            .product__parameters {
-                background-color: #3465A3;
-            }
-        }
-    }
+	&__parameters {
+		width: rem(91px);
+		height: rem(91px);
+		background-color: #3a587e;
+		color: #fff;
+		border-radius: 4px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		user-select: none;
+		cursor: pointer;
 
-    &__parameters {
-        width: rem(91px);
-        height: rem(91px);
-        background-color: #3A587E;
-        color: #fff;
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        user-select: none;
-        cursor: pointer;
+		&-icon {
+			width: rem(38px);
+			height: rem(38px);
+			fill: #fff;
+			margin-bottom: rem(7px);
+		}
 
-        &-icon {
-            width: rem(38px);
-            height: rem(38px);
-            fill: #fff;
-            margin-bottom: rem(7px);
-        }
+		&-title {
+			font-size: rem(14px);
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
 
-        &-title {
-            font-size: rem(14px);
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-    }
+	&__structure {
+		position: absolute;
+		top: 0;
+		right: -9999px;
+		opacity: 0;
 
-    &__structure {
-        position: absolute;
-        top: 0;
-        right: -9999px;
-	    opacity: 0;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 80px;
+			height: 280px;
+			left: -80px;
+			top: 0;
+		}
+	}
 
-        &::before {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 80px;
-            height: 280px;
-            left: -80px;
-            top: 0;
-        }
-    }
+	&__title {
+		font-weight: 700;
+		font-size: rem(36px);
+		color: $black;
+		text-transform: uppercase;
+		margin-bottom: rem(24px);
+	}
 
-    &__title {
-        font-weight: 700;
-        font-size: rem(36px);
-        color: $black;
-        text-transform: uppercase;
-        margin-bottom: rem(24px);
-    }
+	&__content {
+		@include tablets {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 
-    &__content {
-        @include tablets {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+		p {
+			@include tablets {
+				padding: 0;
+			}
 
-        p {
-            margin-bottom: rem(24px);
-        }
-    }
+			margin-bottom: rem(24px);
+			padding-right: rem(60px);
+		}
+	}
 
-    &__features {
-        display: flex;
-        margin-bottom: rem(24px);
-    }
+	&__features {
+		display: flex;
+		margin-bottom: rem(24px);
+	}
 
-    &__feature {
-        margin-right: rem(52px);
+	&__feature {
+		margin-right: rem(52px);
 
-        &:last-child {
-            margin-right: 0;
-        }
+		&:last-child {
+			margin-right: 0;
+		}
 
-        &-title {
-            font-size: rem(18px);
-            color: #666
-        }
+		&-title {
+			font-size: rem(18px);
+			color: #666;
+		}
 
-        &-info {
-            font-weight: 700;
-            color: #000;
-        }
-    }
+		&-info {
+			font-weight: 700;
+			color: #000;
+		}
+	}
 
-    &__footer {
-        display: flex;
-        align-items: center;
-    }
+	&__footer {
+		display: flex;
+		align-items: center;
+	}
 
-    &__price {
-        @include tablets {
-            margin-right: rem(20px);
-        }
+	&__price {
+		@include tablets {
+			margin-right: rem(20px);
+		}
 
-        font-size: rem(60px);
-        font-weight: 300;
-        color: #151515;
-        margin-right: rem(45px);
-        white-space: nowrap;
-    }
+		font-size: rem(60px);
+		font-weight: 300;
+		color: #151515;
+		margin-right: rem(45px);
+		white-space: nowrap;
+	}
 }
