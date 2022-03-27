@@ -4,11 +4,11 @@ $(document).ready(function () {
 		controls: false,
 	});
 
-	$('.slider__control--left').on('click', () => {
+	$('.slider__arrow--left').on('click', () => {
 		slider.goToPrevSlide();
 	});
 
-	$('.slider__control--right').on('click', () => {
+	$('.slider__arrow--right').on('click', () => {
 		slider.goToNextSlide();
 	});
 });

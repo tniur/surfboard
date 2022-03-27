@@ -1,14 +1,13 @@
 .btn {
-    font-weight: 800;
+	font-weight: 800;
 	text-transform: uppercase;
-    color: #000;
+	color: #000;
 	font-size: 1rem;
-    line-height: 1.125rem;
+	line-height: 1.125rem;
 	display: inline-block;
 	padding: 1.3125rem 2.5625rem;
 	border-radius: 6.25rem;
 	background-color: $yellow;
-	border: none;
 	cursor: pointer;
 
 	&:hover {
