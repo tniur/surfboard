@@ -479,39 +479,40 @@
 					<div class="container">
 						<h2 class="title title--order">Закажите доску</h2>
 						<form class="form">
+							<input type="hidden" name="to" value="somewhere@mail.com" />
 							<div class="form__col">
 								<div class="form__row">
 									<label class="form__block">
 										<div class="form__title">Имя</div>
-										<input type="text" class="form__input" />
+										<input type="text" name="name" class="form__input" />
 									</label>
 									<label class="form__block">
 										<div class="form__title">Телефон</div>
-										<input type="tel" class="form__input" />
+										<input type="tel" name="phone" class="form__input" />
 									</label>
 								</div>
 								<div class="form__row">
 									<label class="form__block">
 										<div class="form__title">Улица</div>
-										<input type="text" class="form__input" />
+										<input type="text" name="street" class="form__input" />
 									</label>
 								</div>
 								<div class="form__row">
 									<label class="form__block">
 										<div class="form__title">Дом</div>
-										<input type="text" class="form__input" />
+										<input type="text" name="house" class="form__input" />
 									</label>
 									<label class="form__block">
 										<div class="form__title">Корпус</div>
-										<input type="text" class="form__input" />
+										<input type="text" name="part" class="form__input" />
 									</label>
 									<label class="form__block">
 										<div class="form__title">Квартира</div>
-										<input type="text" class="form__input" />
+										<input type="text" name="flat" class="form__input" />
 									</label>
 									<label class="form__block">
 										<div class="form__title">Этаж</div>
-										<input type="text" class="form__input" />
+										<input type="text" name="level" class="form__input" />
 									</label>
 								</div>
 							</div>
@@ -519,7 +520,7 @@
 								<div class="form__row form__row--textarea">
 									<label class="form__block">
 										<div class="form__title">Комментарий</div>
-										<textarea class="form__input form__input--textarea"></textarea>
+										<textarea name="comment" class="form__input form__input--textarea"></textarea>
 									</label>
 								</div>
 								<div class="form__controls">
@@ -663,6 +664,14 @@
 				</ul>
 			</nav>
 		</div>
+		<div id="modal" class="modal">
+			<div class="container modal__container">
+				<div class="modal__content-wrapper">
+					<div class="modal__content">Сообщение отправлено</div>
+					<button class="modal__close btn">Закрыть</button>
+				</div>
+			</div>
+		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
 		<script src="./scripts/hamburger-menu.js"></script>
 		<script src="./scripts/dropdown.js"></script>
@@ -670,5 +679,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 		<script src="./scripts/slider.js"></script>
+		<script src="./scripts/modal.js"></script>
 	</body>
 </html>

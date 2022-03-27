@@ -1,137 +1,135 @@
 .form {
+	@include tablets {
+		flex-direction: column;
+		max-width: 70%;
+		margin: 0 auto;
+	}
 
-    @include tablets {
-        flex-direction: column;
-        max-width: 70%;
-        margin: 0 auto;
-    }
+	@include phones {
+		max-width: 100%;
+	}
 
-    @include phones {
-        max-width: 100%;
-    }
+	display: flex;
 
-    display: flex;
+	.input-error {
+		border: 0.1875rem solid $yellow;
+	}
 
-    &__col {
-        flex: 1;
+	&__col {
+		flex: 1;
 
-        &:last-child {
-            @include tablets {
-                padding-left: 0;
-            }
-            padding-left: rem(27px);
-        }
-    }
-    
-    &__row {
-        display: flex;
-        margin-bottom: 0.75rem;
+		&:last-child {
+			@include tablets {
+				padding-left: 0;
+			}
+			padding-left: rem(27px);
+		}
+	}
 
-        &--textarea {
-            margin-bottom: rem(30px);
-        }
-    }
+	&__row {
+		display: flex;
+		margin-bottom: 0.75rem;
 
-    &__block {
-        flex: 1;
-        padding-right: 2rem;
+		&--textarea {
+			margin-bottom: rem(30px);
+		}
+	}
 
-        &:last-child {
-            padding-right: 0;
-        }
-    }
+	&__block {
+		flex: 1;
+		padding-right: 2rem;
 
-    &__input {
+		&:last-child {
+			padding-right: 0;
+		}
+	}
 
-        @include tablets {
-            padding: rem(8px) rem(10px);
-        }
+	&__input {
+		@include tablets {
+			padding: rem(8px) rem(10px);
+		}
 
-        font-family: 'Open Sans', sans-serif;
-        width: 100%;
-        border: none;
+		font-family: 'Open Sans', sans-serif;
+		width: 100%;
+		border: none;
 
-        font-size: 0.875rem;
+		font-size: 0.875rem;
 
-        padding: rem(20px) rem(12px);
+		padding: rem(20px) rem(12px);
 
-        border: 0.1875rem solid transparent;
-        border-radius: 0.25rem;
+		border: 0.1875rem solid transparent;
+		border-radius: 0.25rem;
 
-        &:focus {
-        border: 0.1875rem solid $yellow;
-        }
+		&:focus {
+			border: 0.1875rem solid $yellow;
+		}
 
-        &--textarea {
+		&--textarea {
+			@include tablets {
+				width: 100%;
+				height: rem(82px);
+			}
 
-            @include tablets {
-                width: 100%;
-                height: rem(82px);
-            }
+			width: 86%;
+			height: rem(159px);
+			resize: none;
+		}
+	}
 
-            width: 86%;
-            height: rem(159px);
-            resize: none;
-        }
+	&__title {
+		color: #fff;
+		line-height: 1.375rem;
+		margin-bottom: 0.125rem;
+	}
 
-    }
+	&__controls {
+		@include phones {
+			justify-content: center;
+		}
 
-    &__title {
-        color: #fff;
-        line-height: 1.375rem;
-        margin-bottom: 0.125rem;
-    }
+		display: flex;
+		flex-wrap: wrap;
 
-    &__controls {
+		&--button {
+			@include tablets {
+				justify-content: center;
+				margin-top: rem(39px);
+			}
 
-        @include phones {
-            justify-content: center;
-        }
+			margin-top: rem(47px);
+			margin-bottom: 0;
+			display: flex;
+			align-items: center;
+		}
+	}
 
-        display: flex;
-        flex-wrap: wrap;
+	&__radio {
+		margin-bottom: 1.1875rem;
 
-        &--button {
+		&--checkbox {
+			margin-bottom: 0;
+		}
+	}
 
-            @include tablets {
-                justify-content: center;
-                margin-top: rem(39px);
-            }
+	&__controls-item {
+		margin-right: 1.375rem;
 
-            margin-top: rem(47px);
-            margin-bottom: 0;
-            display: flex;
-            align-items: center;
-        }
-    }
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 
-    &__radio {
-        margin-bottom: 1.1875rem;
+	&__reset {
+		display: block;
+		height: 1.875rem;
+		background: none;
+		border: none;
+		color: #fff;
+		cursor: pointer;
+		transition: 0.3s;
 
-        &--checkbox {
-            margin-bottom: 0;
-        }
-    }
-
-    &__controls-item {
-        margin-right: 1.375rem;
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-
-    &__reset {
-        display: block;
-        height: 1.875rem;
-        background: none;
-        border: none;
-        color: #fff;
-        cursor: pointer;
-        transition: .3s;
-
-        &:hover {
-            color: $yellow;
-        }
-    }
+		&:hover {
+			color: $yellow;
+		}
+	}
 }

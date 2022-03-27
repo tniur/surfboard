@@ -63,6 +63,7 @@ address {
 input,
 textarea {
   outline: none;
+  border: none;
 }
 
 img {
@@ -770,6 +771,9 @@ button {
   .form {
     max-width: 100%;
   }
+}
+.form .input-error {
+  border: 0.1875rem solid #fedb3f;
 }
 .form__col {
   -webkit-box-flex: 1;
@@ -1585,4 +1589,48 @@ button {
 }
 .structure__name {
   font-weight: 500;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: #313131;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.modal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 2.3125rem 4.25rem;
+}
+.modal__content {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1.125rem;
 }
