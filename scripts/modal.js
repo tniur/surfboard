@@ -13,6 +13,10 @@ const validateFields = (form, fieldsArray) => {
 function showModal() {
 	$('#modal').css('display', 'flex');
 	$('body').addClass('fixed');
+
+	$(document).on('touchmove', function (e) {
+		e.preventDefault();
+	});
 }
 
 function hideModal() {
