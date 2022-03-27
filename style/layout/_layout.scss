@@ -9,3 +9,8 @@
 	max-width: $containerWidth;
 	margin: 0 auto;
 }
+
+.fixed {
+	max-height: 100vh;
+	overflow: hidden;
+}

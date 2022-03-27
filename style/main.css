@@ -96,6 +96,11 @@ button {
   margin: 0 auto;
 }
 
+.fixed {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 .hero {
   background: url(../img/background/bc-1.jpg) center center no-repeat;
   background-size: cover;
@@ -519,7 +524,7 @@ button {
   }
 }
 .slider__arrow--left {
-  background: url(../../img/svg/arrow-prev.svg) center center no-repeat;
+  background: url(../img/svg/arrow-prev.svg) center center no-repeat;
   left: 0;
 }
 @media screen and (max-width: 768px) {
@@ -528,7 +533,7 @@ button {
   }
 }
 .slider__arrow--right {
-  background: url(../../img/svg/arrow-next.svg) center center no-repeat;
+  background: url(../img/svg/arrow-next.svg) center center no-repeat;
   right: 0;
 }
 @media screen and (max-width: 768px) {
