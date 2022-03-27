@@ -12,16 +12,12 @@ const validateFields = (form, fieldsArray) => {
 
 function showModal() {
 	$('#modal').css('display', 'flex');
-	$('body').addClass('fixed');
-
-	$(document).on('touchmove', function (e) {
-		e.preventDefault();
-	});
+	$('body').css('overflow-y', 'hidden');
 }
 
 function hideModal() {
 	$('#modal').css('display', 'none');
-	$('body').removeClass('fixed');
+	$('body').css('overflow-y', 'visible');
 }
 
 $('.form').submit((event) => {

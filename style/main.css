@@ -96,11 +96,6 @@ button {
   margin: 0 auto;
 }
 
-.fixed {
-  max-height: 100vh;
-  overflow: hidden;
-}
-
 .hero {
   background: url(../img/background/bc-1.jpg) center center no-repeat;
   background-size: cover;
