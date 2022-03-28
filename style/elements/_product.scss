@@ -141,17 +141,18 @@
 
 		p {
 			@include tablets {
-				padding: 0;
+				padding: 0 rem(60px);
 			}
 
 			margin-bottom: rem(24px);
-			padding-right: rem(60px);
+			padding-right: rem(100px);
+			line-height: rem(22px);
 		}
 	}
 
 	&__features {
 		display: flex;
-		margin-bottom: rem(24px);
+		margin-bottom: rem(20px);
 	}
 
 	&__feature {
@@ -185,7 +186,7 @@
 		font-size: rem(60px);
 		font-weight: 300;
 		color: #151515;
-		margin-right: rem(45px);
+		margin-right: rem(60px);
 		white-space: nowrap;
 	}
 }
