@@ -1,31 +1,44 @@
 .title {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 3.625rem;
-    color: $black;
-    margin-bottom: 3.3125rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 3.625rem;
+	color: $black;
+	margin-bottom: 3.3125rem;
 
-    &--benefits {
-        margin-bottom: 1.0625rem;
-    }
+	&--benefits {
+		margin-bottom: 1.0625rem;
+	}
 
-    &--feedback {
-        margin-bottom: 2rem;
-    }
+	&--feedback {
+		@include tablets {
+			margin-bottom: 1rem;
+		}
 
-    &--order {
+		margin-bottom: 2rem;
+	}
 
-        @include tablets {
-            margin-bottom: rem(30px);
-        }
+	&--order {
+		@include tablets {
+			margin-bottom: rem(30px);
+		}
 
-        margin-bottom: 3.6875rem;
-        color: #fff;
-    }
+		margin-bottom: 3.6875rem;
+		color: #fff;
+	}
 
-    &--team {
-        margin-bottom: rem(53px);
-    }
+	&--team {
+		margin-bottom: rem(53px);
+	}
+
+	&--menu {
+		color: #fff;
+		margin-bottom: 0;
+		text-align: start;
+		position: absolute;
+		top: 10%;
+		left: 7%;
+		z-index: 100;
+	}
 }

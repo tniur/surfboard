@@ -1,0 +1,69 @@
+.horizontal-menu {
+	@include fadeOverlay(0.2);
+
+	background: url(../img/background/bc-3.jpeg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+
+	&__list {
+		display: flex;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		z-index: 100;
+	}
+
+	&__item {
+		height: 100%;
+		display: flex;
+		color: #fff;
+	}
+
+	&__header {
+		@include fadeOverlay(0.6);
+
+		width: rem(102px);
+		height: 100%;
+		flex-shrink: 0;
+		position: relative;
+		margin: 0;
+		cursor: pointer;
+
+		&--one {
+			background: url(../img/horizontal-menu/slide-1.jpeg) center center no-repeat;
+			background-size: cover;
+		}
+
+		&--two {
+			background: url(../img/horizontal-menu/slide-2.jpeg) left 55% center no-repeat;
+			background-size: cover;
+		}
+
+		&--three {
+			background: url(../img/horizontal-menu/slide-3.jpeg) left 50% center no-repeat;
+			background-size: cover;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: rem(48px);
+		transform: rotate(-90deg);
+		position: absolute;
+		bottom: 15%;
+		left: -65%;
+	}
+
+	&__content {
+		@include fadeOverlay(0.9);
+
+		position: relative;
+		width: 0;
+		overflow: hidden;
+		transition: 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+	}
+
+	&__content-inner {
+		padding: rem(31px) rem(38px);
+	}
+}

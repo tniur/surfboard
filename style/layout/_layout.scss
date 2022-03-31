@@ -9,3 +9,18 @@
 	max-width: $containerWidth;
 	margin: 0 auto;
 }
+
+@mixin fadeOverlay($opacity) {
+	z-index: 0;
+	&::after {
+		content: '';
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #2b2b2b;
+		position: absolute;
+		opacity: $opacity;
+		z-index: -1;
+	}
+}

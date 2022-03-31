@@ -33,6 +33,8 @@ $phones: 480px;
 @import 'blocks/_hamburger-menu.scss';
 @import 'blocks/_slider.scss';
 @import 'blocks/_team.scss';
+@import 'blocks/_horizontal-menu.scss';
+@import 'blocks/_video.scss';
 
 @import 'elements/_navigation.scss';
 @import 'elements/_button.scss';
@@ -52,3 +54,5 @@ $phones: 480px;
 @import 'elements/_product.scss';
 @import 'elements/_structure.scss';
 @import 'elements/_modal.scss';
+@import 'elements/_player.scss';
+@import 'elements/_map.scss';

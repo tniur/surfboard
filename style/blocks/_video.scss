@@ -1,0 +1,9 @@
+.video {
+	background-color: #f8faf9;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
