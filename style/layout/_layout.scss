@@ -1,6 +1,6 @@
 .wrapper {
 	width: 100%;
-	min-height: 100%;
+	height: 100%;
 	overflow: hidden;
 }
 
@@ -8,6 +8,12 @@
 	width: 95%;
 	max-width: $containerWidth;
 	margin: 0 auto;
+}
+
+.maincontent {
+	height: 100%;
+	transition: transform 0.8s;
+	will-change: transform;
 }
 
 @mixin fadeOverlay($opacity) {
