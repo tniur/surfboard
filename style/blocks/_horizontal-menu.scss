@@ -13,10 +13,25 @@
 		z-index: 100;
 	}
 
+	&__title {
+		font-weight: 700;
+		font-size: rem(48px);
+		transform: rotate(-90deg);
+		position: absolute;
+		bottom: 15%;
+		left: -65%;
+	}
+
 	&__item {
 		height: 100%;
 		display: flex;
 		color: #fff;
+
+		&:last-child {
+			.horizontal-menu__title {
+				left: -50%;
+			}
+		}
 	}
 
 	&__header {
@@ -43,15 +58,6 @@
 			background: url(../img/horizontal-menu/slide-3.jpeg) left 50% center no-repeat;
 			background-size: cover;
 		}
-	}
-
-	&__title {
-		font-weight: 700;
-		font-size: rem(48px);
-		transform: rotate(-90deg);
-		position: absolute;
-		bottom: 15%;
-		left: -65%;
 	}
 
 	&__content {

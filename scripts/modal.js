@@ -12,7 +12,6 @@ const validateFields = (form, fieldsArray) => {
 
 function showModal() {
 	$('#modal').css('display', 'flex');
-	$('body').css('overflow-y', 'hidden');
 }
 
 function hideModal() {
